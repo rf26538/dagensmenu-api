@@ -1,0 +1,3411 @@
+{
+	"info": {
+		"_postman_id": "45455321-ce0d-4f29-8f59-e90d69c6d426",
+		"name": "Dagensmenu API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserDeliveryAddress",
+			"item": [
+				{
+					"name": "Add user delivery address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzIzNjEyMjUsImV4cCI6MTU3NDk1MzIyNSwibmJmIjoxNTcyMzYxMjI1LCJqdGkiOiJaelFTVVU4WmU5bm1BTVB6Iiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iHP98vMLVRYdlpBlper2cf0IWjHnJH9N4-DCdwdl0Qw",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"addressLine1\" : \"address line 1\",\n\t\"addressLine2\" : \"address line 2\",\n\t\"addressLine3\" : \"address line 3\",\n\t\"city\" : \"city name\",\n\t\"postcode\" : \"2300\",\n\t\"telephone\": \"123123121\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/userDeliveryAddress",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"userDeliveryAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user delivery address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzI1NDgxODYsImV4cCI6MTU3NTE0MDE4NiwibmJmIjoxNTcyNTQ4MTg2LCJqdGkiOiJ5Qm9UMzA3a3QwYmZ6MVlXIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.XgWxAypWWq9X_eX1gDcsyK5Fru8o_WTxJyE2yNvCkXU"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"addressLine1\" : \"address line 1 1 1\",\n\t\"addressLine2\" : \"address line 2 2 2\",\n\t\"addressLine3\" : \"address line 3 3 3\",\n\t\"city\" : \"city name 1 1\",\n\t\"postcode\" : \"2500\",\n\t\"telephone\":\"34343434\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/userDeliveryAddress/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"userDeliveryAddress",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user telephone",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzU2NjcxODgsImV4cCI6MTU3ODI1OTE4OCwibmJmIjoxNTc1NjY3MTg4LCJqdGkiOiJQNXBydmoyNFI0TTAxcVZIIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.uPEvvfBKZmgcCG8lQZyqcqZHrqZDRX9hN4Azd5ePnP8"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"telephone\":\"12312312\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/userDeliveryAddress/addTelephoneNumber",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"userDeliveryAddress",
+								"addTelephoneNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user delivery address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzI1NDgxODYsImV4cCI6MTU3NTE0MDE4NiwibmJmIjoxNTcyNTQ4MTg2LCJqdGkiOiJ5Qm9UMzA3a3QwYmZ6MVlXIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.XgWxAypWWq9X_eX1gDcsyK5Fru8o_WTxJyE2yNvCkXU"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/userDeliveryAddress/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"userDeliveryAddress",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Load user delivery address",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzIzNjEyMjUsImV4cCI6MTU3NDk1MzIyNSwibmJmIjoxNTcyMzYxMjI1LCJqdGkiOiJaelFTVVU4WmU5bm1BTVB6Iiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iHP98vMLVRYdlpBlper2cf0IWjHnJH9N4-DCdwdl0Qw"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/userDeliveryAddress",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"userDeliveryAddress"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "login admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = pm.response.json();",
+									"pm.environment.set('Token', data.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "a@a.aa",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login admin with auto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "672a734f8f71963efe15c0fc21ec51e7",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/loginWithToken",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"loginWithToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login non admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "a1@a.a",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RestaurantDetails",
+			"item": [
+				{
+					"name": "Load restaurant details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzIzNjEyMjUsImV4cCI6MTU3NDk1MzIyNSwibmJmIjoxNTcyMzYxMjI1LCJqdGkiOiJaelFTVVU4WmU5bm1BTVB6Iiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iHP98vMLVRYdlpBlper2cf0IWjHnJH9N4-DCdwdl0Qw"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/restaurant/detail/fetchMobilePayDetails/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"detail",
+								"fetchMobilePayDetails",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant fetch",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzIzNjEyMjUsImV4cCI6MTU3NDk1MzIyNSwibmJmIjoxNTcyMzYxMjI1LCJqdGkiOiJaelFTVVU4WmU5bm1BTVB6Iiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iHP98vMLVRYdlpBlper2cf0IWjHnJH9N4-DCdwdl0Qw"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/restaurant-details/fetch/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant-details",
+								"fetch",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant Menu card images",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzQ1MzY5NjIsImV4cCI6MTU3NzEyODk2MiwibmJmIjoxNTc0NTM2OTYyLCJqdGkiOiJpZUxWZ3R2Y3piaklFc0VuIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.c77t0o_Kx-1r67m_bifmvEYyGRmjmGpLl0Quq6wsrX4"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/restaurant/detail/fetchMenuCardImages/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"detail",
+								"fetchMenuCardImages",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant images",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzUwNDQ5ODUsImV4cCI6MTU3NzYzNjk4NSwibmJmIjoxNTc1MDQ0OTg1LCJqdGkiOiI3RUN3eWlCaDM1MnJOUGUwIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.i3xXvw828cAQX3LJJswJgSeZLm9tPUhS_mfR5PEfcqQ"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/restaurant/detail/fetchImages/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"detail",
+								"fetchImages",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/details",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant upload multiple image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/uploadMultipleImage",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"uploadMultipleImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant upload multiple pdf",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/uploadMultiplePdf",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"uploadMultiplePdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enable Future Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/advertisement/enableFutureOrder/14?enableFutureOrder=1&restaurantId=14",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"advertisement",
+								"enableFutureOrder",
+								"14"
+							],
+							"query": [
+								{
+									"key": "enableFutureOrder",
+									"value": "1"
+								},
+								{
+									"key": "restaurantId",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Closed Restaurant On Virk Smiley And Google Informations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/getClosedRestaurantOnVirkSmileyAndGoogleInformations",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"getClosedRestaurantOnVirkSmileyAndGoogleInformations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Closed Restaurant On Virk Smiley And Google Informations Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/changeRestaurantCloseStatus/1/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"changeRestaurantCloseStatus",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant change status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/advertisement/changeStatus/12/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"advertisement",
+								"changeStatus",
+								"12",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Auto Print Enabled Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/updateAutoPrintEnabledStatus/{{RESTAURANT_ID}}/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"updateAutoPrintEnabledStatus",
+								"{{RESTAURANT_ID}}",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Log",
+			"item": [
+				{
+					"name": "addNoLocalStorage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/log/noLocalStorage",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"log",
+								"noLocalStorage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWebsiteRegistrationStats",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MzExNjk0ODYsImV4cCI6MTYzMzc2MTQ4NiwibmJmIjoxNjMxMTY5NDg2LCJqdGkiOiJWblBOM2UxSWRLb3FsVk43Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.B6yjOwf_pA3_Pz7y_TepMrPcdPP4sghJ9S0ykRW51V0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/websiteRegistrationStats/fetchAll",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"websiteRegistrationStats",
+								"fetchAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWebsiteLoginStats",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MzE2ODMzNjksImV4cCI6MTYzNDI3NTM2OSwibmJmIjoxNjMxNjgzMzY5LCJqdGkiOiJIdFpnalVTc2lPcXhsZlN2Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.A2_S5mffjDMs0pQTx7J-nDvrJXxULJhV3omzMLf0iSg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/websiteLoginStats/fetchAll",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"websiteLoginStats",
+								"fetchAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food order",
+			"item": [
+				{
+					"name": "Place order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzgyMzIzNzUsImV4cCI6MTU4MDgyNDM3NSwibmJmIjoxNTc4MjMyMzc1LCJqdGkiOiJObVVBb1hnQzMyMjlLQWs0Iiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.ItePfgzhvOn6Okt4_J-TXzzyZtJd17YajH2tdZaRcy8",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"restaurantId\": 1,\n    \"totalFoodPrice\": 133210,\n    \"deliveryPrice\": 0,\n    \"orderType\": 1,\n    \"paymentType\": 2,\n    \"menuItems[0][menuItemId]\": 6,\n    \"menuItems[0][count]\": 2,\n    \"menuItems[0][sizeId]\": 1,\n    \"menuItems[0][priceOfMenuItem]\": 40000,\n    \"menuItems[0][totalPriceWithOptions]\": 54000,\n    \"menuItems[0][options][0][optionId]\": 1,\n    \"menuItems[0][options][0][optionItems][0][optionItemId]\": 3,\n    \"menuItems[0][options][0][optionItems][0][optionItemPrice]\": 2000,\n    \"menuItems[0][options][1][optionId]\": 2,\n    \"menuItems[0][options][1][optionItems][0][optionItemId]\": 7,\n    \"menuItems[0][options][1][optionItems][0][optionItemPrice]\": 5000,\n    \"menuItems[1][menuItemId]\": 1,\n    \"menuItems[1][count]\": 2,\n    \"menuItems[1][sizeId]\": 0,\n    \"menuItems[1][priceOfMenuItem]\": 24000,\n    \"menuItems[1][totalPriceWithOptions]\": 28000,\n    \"menuItems[1][options][0][optionId]\": 1,\n    \"menuItems[1][options][0][optionItems][0][optionItemId]\": 2,\n    \"menuItems[1][options][0][optionItems][0][optionItemPrice]\": 2000,\n    \"menuItems[2][menuItemId]\": 6,\n    \"menuItems[2][count]\": 1,\n    \"menuItems[2][sizeId]\": 2,\n    \"menuItems[2][priceOfMenuItem]\": 30000,\n    \"menuItems[2][totalPriceWithOptions]\": 44000,\n    \"menuItems[2][options][0][optionId]\": 1,\n    \"menuItems[2][options][0][optionItems][0][optionItemId]\": 2,\n    \"menuItems[2][options][0][optionItems][0][optionItemPrice]\": 2000,\n    \"menuItems[2][options][1][optionId]\": 2,\n    \"menuItems[2][options][1][optionItems][0][optionItemId]\": 6,\n    \"menuItems[2][options][1][optionItems][0][optionItemPrice]\": 4000,\n    \"menuItems[2][options][1][optionItems][1][optionItemId]\": 5,\n    \"menuItems[2][options][1][optionItems][1][optionItemPrice]\": 4000,\n    \"menuItems[3][menuItemId]\": 6,\n    \"menuItems[3][count]\": 1,\n    \"menuItems[3][sizeId]\": 2,\n    \"menuItems[3][priceOfMenuItem]\": 30000,\n    \"menuItems[3][totalPriceWithOptions]\": 47000,\n    \"menuItems[3][options][0][optionId]\": 1,\n    \"menuItems[3][options][0][optionItems][0][optionItemId]\": 4,\n    \"menuItems[3][options][0][optionItems][0][optionItemPrice]\": 5000,\n    \"menuItems[3][options][1][optionId]\": 2,\n    \"menuItems[3][options][1][optionItems][0][optionItemId]\": 6,\n    \"menuItems[3][options][1][optionItems][0][optionItemPrice]\": 4000,\n    \"menuItems[3][options][1][optionItems][1][optionItemId]\": 5,\n    \"menuItems[3][options][1][optionItems][1][optionItemPrice]\": 4000,\n    \"orderMessage\": \"\",\n    \"discountPrice\": 39790,\n    \"discountPercentage\": 23\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/foodOrder",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"foodOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Status",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzM1NTg2NTksImV4cCI6MTU3NjE1MDY1OSwibmJmIjoxNTczNTU4NjU5LCJqdGkiOiJHZ29zdm9FZ2ZLRGNTek5xIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.TTm3FwLxg6SF5QNgxTgpmfUkHa5ztm0ySKaMkpCAo4Y"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/getStatus/NoZyCxs6t",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"getStatus",
+								"NoZyCxs6t"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resta today orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzcwMDE3NDEsImV4cCI6MTU3OTU5Mzc0MSwibmJmIjoxNTc3MDAxNzQxLCJqdGkiOiJLU05sRnI0eGtTbzJTMVBOIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.H2fyB4EOwd4h8ZQm6L1pPgo7p_i42tpGF41o74sKsLg"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/getRestaurantOrdersForLastHours/1/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"getRestaurantOrdersForLastHours",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Mark as Accepted",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzM1NjU5MDQsImV4cCI6MTU3NjE1NzkwNCwibmJmIjoxNTczNTY1OTA0LCJqdGkiOiJHekV2RjBNTlJVQVoweTJKIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0._VY_G4KYpm3uzrmG6fT_P-XUFrbdm0VVUt9geLMeOlM"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"deliveryApproxTimeInSeconds\" : 20 }"
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/markAsAccepted/KLYJGsWxR",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"markAsAccepted",
+								"KLYJGsWxR"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Mark as Rejected",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzM1NjU5MDQsImV4cCI6MTU3NjE1NzkwNCwibmJmIjoxNTczNTY1OTA0LCJqdGkiOiJHekV2RjBNTlJVQVoweTJKIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0._VY_G4KYpm3uzrmG6fT_P-XUFrbdm0VVUt9geLMeOlM"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"rejectionReasonId\" : 3, \"rejectionReasonComment\" : \"øæåÆØÅ asda sasd asdasd\"}"
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/markAsRejected/8tDcAUd1M",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"markAsRejected",
+								"8tDcAUd1M"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Mark as ready",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzM1NjU5MDQsImV4cCI6MTU3NjE1NzkwNCwibmJmIjoxNTczNTY1OTA0LCJqdGkiOiJHekV2RjBNTlJVQVoweTJKIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0._VY_G4KYpm3uzrmG6fT_P-XUFrbdm0VVUt9geLMeOlM"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/markAsReady/8tDcAUd1M",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"markAsReady",
+								"8tDcAUd1M"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Mark as seen by restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzM1NjU5MDQsImV4cCI6MTU3NjE1NzkwNCwibmJmIjoxNTczNTY1OTA0LCJqdGkiOiJHekV2RjBNTlJVQVoweTJKIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0._VY_G4KYpm3uzrmG6fT_P-XUFrbdm0VVUt9geLMeOlM"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{URL}}/userOrder/markAsSeenByRestaurant/fMpcEmws6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"markAsSeenByRestaurant",
+								"fMpcEmws6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TableBooking",
+			"item": [
+				{
+					"name": "Fetch by unique id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzM1NTg2NTksImV4cCI6MTU3NjE1MDY1OSwibmJmIjoxNTczNTU4NjU5LCJqdGkiOiJHZ29zdm9FZ2ZLRGNTek5xIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.TTm3FwLxg6SF5QNgxTgpmfUkHa5ztm0ySKaMkpCAo4Y"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{URL}}/tableBooking/fetch/notExpired/byTelephone/qGQ8wp9Y",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"fetch",
+								"notExpired",
+								"byTelephone",
+								"qGQ8wp9Y"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch monthly report",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/tableBooking/report/restaurantTableBookingMonthlyReport/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"report",
+								"restaurantTableBookingMonthlyReport",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch table booking closed date",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/tableBooking/closedDates/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"closedDates",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save table booking closed date",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"closedDate\" : \"2020-09-19\",\r\n    \"closedTimeFrom\" : \"22:57\",\r\n    \"closedTimeTo\" : \"23:57\",\r\n    \"reason\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/tableBooking/closedDate/33",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"closedDate",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update table booking closed date",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tableBookingclosedDateId\": 287,\r\n    \"restaurantId\" : 33,\r\n    \"closedDate\" : \"2020-09-22\",\r\n    \"closedTimeFrom\" : \"22:57\",\r\n    \"closedTimeTo\" : \"23:57\",\r\n    \"reason\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/tableBooking/closedDate/287",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"closedDate",
+								"287"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete table booking closed date",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurantId\": 33\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/tableBooking/closedDate/287",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"closedDate",
+								"287"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get timing for table booking closed date",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/tableBooking/timings/33?closedDate=2020-09-20",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"timings",
+								"33"
+							],
+							"query": [
+								{
+									"key": "closedDate",
+									"value": "2020-09-20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get table booking timing with closed dates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/tableBooking/timingWithClosedDates/33?date=2020-09-20",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"timingWithClosedDates",
+								"33"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-09-20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save table booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"restaurantId\" : 1, \n    \"guestName\": \"Rahul test\",\n    \"guestTelephoneNumber\": \"9313301020\",\n    \"guestEmailAddress\": \"rahulstalin4@gmail.com\",\n    \"numberOfGuests\": 10,\n    \"dateOfBooking\": \"2020-09-10\",\n    \"timeOfBooking\": \"17:45:00\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/tableBooking/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"tableBooking",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch table bookings for restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/tableBooking/fetchBookingsForRestaurant/1?startDate=2020-09-08&endDate=2020-12-20",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"tableBooking",
+								"fetchBookingsForRestaurant",
+								"1"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2020-09-08"
+								},
+								{
+									"key": "endDate",
+									"value": "2020-12-20"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Size",
+			"item": [
+				{
+					"name": "Load sizes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzIzNjEyMjUsImV4cCI6MTU3NDk1MzIyNSwibmJmIjoxNTcyMzYxMjI1LCJqdGkiOiJaelFTVVU4WmU5bm1BTVB6Iiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iHP98vMLVRYdlpBlper2cf0IWjHnJH9N4-DCdwdl0Qw"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/order/size",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"size"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Delivery Price",
+					"item": [
+						{
+							"name": "Fetch all delivery prices",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/orderOnline/deliveryPrice/fetchAll",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"orderOnline",
+										"deliveryPrice",
+										"fetchAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Save delivery price",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/orderOnline/deliveryPrice",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"orderOnline",
+										"deliveryPrice"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update delivery price",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/orderOnline/deliveryPrice/{deliveryPriceId}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"orderOnline",
+										"deliveryPrice",
+										"{deliveryPriceId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update delivery price Copy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/orderOnline/deliveryPrice/{deliveryPriceId}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"orderOnline",
+										"deliveryPrice",
+										"{deliveryPriceId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check delivery allowed for all postcodes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/restaurant/deliveryAllowedForAllPostcodes/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"restaurant",
+										"deliveryAllowedForAllPostcodes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change delivery allowed for all pos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{Token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/restaurant/deliveryAllowedForAllPostcode/{restaurantId}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"restaurant",
+										"deliveryAllowedForAllPostcode",
+										"{restaurantId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User order history",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/order/history",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"history"
+							]
+						},
+						"description": "Get last one year orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Admin list latest order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/order/latest",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"latest"
+							]
+						},
+						"description": "Get latest orders for admin\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get single order detail",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/userOrder/orderDetail/sadfasd",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"orderDetail",
+								"sadfasd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivery and takeaway opening timings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/checkTakeawayAndDelivery/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"checkTakeawayAndDelivery",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/restaurant/orders/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"restaurant",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get menu item names",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/order/menuItemName/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"menuItemName",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept future order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/userOrder/markFutureOrderAsAccepted/I6jiNvQSO?restaurantOwnerOrderAcceptedTime=1613717460",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"userOrder",
+								"markFutureOrderAsAccepted",
+								"I6jiNvQSO"
+							],
+							"query": [
+								{
+									"key": "restaurantOwnerOrderAcceptedTime",
+									"value": "1613717460"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Restaurant Has New Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/order/restaurant/hasNewOrder",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"restaurant",
+								"hasNewOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save menu item sizes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjExMDI5OTcsImV4cCI6MTYyMzY5NDk5NywibmJmIjoxNjIxMTAyOTk3LCJqdGkiOiJHMkRVb2dNQ2ZXM0NNdFdmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fnbtZEtOFbU2jAH0rfh7prrp4Pjd8s7xvcpfdrGz8Dc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "sizeName",
+									"value": "sizeName",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/order/menuItem/size",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"menuItem",
+								"size"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update menuI tem sizes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjExMDI5OTcsImV4cCI6MTYyMzY5NDk5NywibmJmIjoxNjIxMTAyOTk3LCJqdGkiOiJHMkRVb2dNQ2ZXM0NNdFdmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fnbtZEtOFbU2jAH0rfh7prrp4Pjd8s7xvcpfdrGz8Dc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sizeName",
+									"value": "abc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/order/menuItem/size/26",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"menuItem",
+								"size",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save delivery rejected orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orderOnline/deliveryRejectedOrder",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orderOnline",
+								"deliveryRejectedOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get phone number verification status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send code for phone verification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orderOnline/phoneNumberVerification/sendCode/12345678",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orderOnline",
+								"phoneNumberVerification",
+								"sendCode",
+								"12345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify verification code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MzAwNDc0MjQsImV4cCI6MTY0NTk0NzQyNCwibmJmIjoxNjMwMDQ3NDI0LCJqdGkiOiJyUjhIbFBndFI4MzRDVzZiIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.e3AhFvTecDT6T4f4svc0Lj6RQ-rXbpNElRKjrwzb0Nw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/orderOnline/phoneNumberVerification/verifyCode/12345678/321750",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"orderOnline",
+								"phoneNumberVerification",
+								"verifyCode",
+								"12345678",
+								"321750"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Fetch all invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/payment/invoices/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"invoices",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch single invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/payment/invoice/manual/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"invoice",
+								"manual",
+								"1"
+							]
+						},
+						"description": "Here type can be any one of them: \r\n1.  manual\r\n2.  automatic\r\n\r\nApi: \r\npayment/{type}/paymentInvoiceId\r\npayment/{type}/paymentInvoiceId"
+					},
+					"response": []
+				},
+				{
+					"name": "Save Manual Invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"moms\": \"10000\",\r\n    \"description\": \"testing\",\r\n    \"startDate\": \"2020-09-20\",\r\n    \"endDate\": \"2020-09-23\",\r\n    \"advId\": \"1\",\r\n    \"amount\": \"40000\",\r\n    \"totalAmount\": \"50000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/payment/manualInvoice/save",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"manualInvoice",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create payment intent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/payment/stripe/createPaymentIntent/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"stripe",
+								"createPaymentIntent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cardRegisterSuccessfullResponse",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/payment/stripe/cardRegisterSuccessfullyResponse/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"stripe",
+								"cardRegisterSuccessfullyResponse",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch details to authenticate failed payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/payment/stripe/fetchDetailsToAuthenticateFailedPayment/9120",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"stripe",
+								"fetchDetailsToAuthenticateFailedPayment",
+								"9120"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save success authenticate payment details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "restaurantId",
+									"value": "9120",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/payment/stripe/saveSuccessAuthenticatePaymentDetails/9120",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"stripe",
+								"saveSuccessAuthenticatePaymentDetails",
+								"9120"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save failed authenticate payment details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "restaurantId",
+									"value": "9221",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/payment/stripe/saveFailedAuthenticatePaymentDetails/9121?restaurantId=9121",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"stripe",
+								"saveFailedAuthenticatePaymentDetails",
+								"9121"
+							],
+							"query": [
+								{
+									"key": "restaurantId",
+									"value": "9121"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Card register failure response save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/payment/stripe/cardRegisterFailureResponse/9121",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"payment",
+								"stripe",
+								"cardRegisterFailureResponse",
+								"9121"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Add Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/order/category",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Categories Positions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sort[0]['categoryId']",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sort[0]['position']",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/order/category/positions",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"category",
+								"positions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Categories Restaurant Positions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sort[0]['categoryId']",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sort[0]['position']",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/order/categoryRestaurant/positions/{restaurantId}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"categoryRestaurant",
+								"positions",
+								"{restaurantId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MenuItem",
+			"item": [
+				{
+					"name": "Save MenuItem Positions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sort[0][position]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sort[0][menuItemId]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sort[1][position]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "sort[1][menuItemId]",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/order/menuItem/positions/1/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"menuItem",
+								"positions",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant MenuItems",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/order/menuItem/restaurantId/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"menuItem",
+								"restaurantId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Menu Item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/order/menuItem",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"order",
+								"menuItem"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Translations",
+			"item": [
+				{
+					"name": "Get Danish Text For Mobile Apps",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE1NzM1NjU5MDQsImV4cCI6MTU3NjE1NzkwNCwibmJmIjoxNTczNTY1OTA0LCJqdGkiOiJHekV2RjBNTlJVQVoweTJKIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0._VY_G4KYpm3uzrmG6fT_P-XUFrbdm0VVUt9geLMeOlM"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"deliveryApproxTimeInSeconds\" : 20 }"
+						},
+						"url": {
+							"raw": "{{URL}}/translations?lang=da",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"translations"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "da"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stats",
+			"item": [
+				{
+					"name": "Menu card post code stats",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/stats/fetchAllMenuCardStats",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"stats",
+								"fetchAllMenuCardStats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menu card stats on post code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/stats/fetchMenuCardStatsOnPostCode?postCode=8031",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"stats",
+								"fetchMenuCardStatsOnPostCode"
+							],
+							"query": [
+								{
+									"key": "postCode",
+									"value": "8031"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/feedback/save",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"feedback",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get logged in user details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/user/loggedInUserDetails",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"loggedInUserDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch All Feedback",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjA3MjEzODAsImV4cCI6MTYyMzMxMzM4MCwibmJmIjoxNjIwNzIxMzgwLCJqdGkiOiJiMndsQnNocDd4dkgxT2VrIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SU374iBhFUhtG4gP6GxO-FXxBjvrdH6iJQvlKnCUK1U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/feedback/getFeedback",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"feedback",
+								"getFeedback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mark feedback as read",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjA3MjEzODAsImV4cCI6MTYyMzMxMzM4MCwibmJmIjoxNjIwNzIxMzgwLCJqdGkiOiJiMndsQnNocDd4dkgxT2VrIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SU374iBhFUhtG4gP6GxO-FXxBjvrdH6iJQvlKnCUK1U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/feedback/markAsRead/114",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"feedback",
+								"markAsRead",
+								"114"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Feedback Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjA3MjEzODAsImV4cCI6MTYyMzMxMzM4MCwibmJmIjoxNjIwNzIxMzgwLCJqdGkiOiJiMndsQnNocDd4dkgxT2VrIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SU374iBhFUhtG4gP6GxO-FXxBjvrdH6iJQvlKnCUK1U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/feedback/delete/115",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"feedback",
+								"delete",
+								"115"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Save user details for forgot password",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "vikasnautane127@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user/forgotPassword",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "46152a19e1cf7cb166243f1ea13ded42",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user/changePassword",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/user/getUserDetails?token=4af0086f3859e8238b846712df6079d2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"getUserDetails"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "4af0086f3859e8238b846712df6079d2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change user email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjQ0MjcxMTAsImV4cCI6MTYyNzAxOTExMCwibmJmIjoxNjI0NDI3MTEwLCJqdGkiOiJnaUJZTG43a1RYZ0hqMnBDIiwic3ViIjo1NiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.m8dxRCBVtwf31Vlgy3wbtJmKYiHk8Gxq-SzepYkp9rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "vikasnautane127@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user/changeUserEmail",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"changeUserEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjQ0MjcxMTAsImV4cCI6MTYyNzAxOTExMCwibmJmIjoxNjI0NDI3MTEwLCJqdGkiOiJnaUJZTG43a1RYZ0hqMnBDIiwic3ViIjo1NiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.m8dxRCBVtwf31Vlgy3wbtJmKYiHk8Gxq-SzepYkp9rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/user/deleteUserAccount",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"deleteUserAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change profile information",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2MjQ0MjcxMTAsImV4cCI6MTYyNzAxOTExMCwibmJmIjoxNjI0NDI3MTEwLCJqdGkiOiJnaUJZTG43a1RYZ0hqMnBDIiwic3ViIjo1NiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.m8dxRCBVtwf31Vlgy3wbtJmKYiHk8Gxq-SzepYkp9rI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Vikas",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Nyotane",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user/changeProfileInfo",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"changeProfileInfo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Footer Links",
+			"item": [
+				{
+					"name": "Get list of footer links",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2Mjc0Njk0MTIsImV4cCI6MTYzMDA2MTQxMiwibmJmIjoxNjI3NDY5NDEyLCJqdGkiOiJFYmMyekVsTktndTg5R2tBIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jXEzF0htzwQv9GT0zAVS8IpcM6DEEqWdJcMq1P6xPC0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/footerLinks/getAll",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"footerLinks",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete footer links",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2Mjc0Njk0MTIsImV4cCI6MTYzMDA2MTQxMiwibmJmIjoxNjI3NDY5NDEyLCJqdGkiOiJFYmMyekVsTktndTg5R2tBIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jXEzF0htzwQv9GT0zAVS8IpcM6DEEqWdJcMq1P6xPC0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/footerLinks/delete/37",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"footerLinks",
+								"delete",
+								"37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single footer link",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2Mjc0Njk0MTIsImV4cCI6MTYzMDA2MTQxMiwibmJmIjoxNjI3NDY5NDEyLCJqdGkiOiJFYmMyekVsTktndTg5R2tBIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jXEzF0htzwQv9GT0zAVS8IpcM6DEEqWdJcMq1P6xPC0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/footerLinks/getSingleFooterLink/30",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"footerLinks",
+								"getSingleFooterLink",
+								"30"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "Save Review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update review",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/review/update/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"review",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AutomatedCollection",
+			"item": [
+				{
+					"name": "Get all organic restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvbG9naW4iLCJpYXQiOjE2NDYwNTQyNTAsImV4cCI6MTkxNjk4NzkxMCwibmJmIjoxNjQ2MDU0MjUwLCJqdGkiOiJWNkdoSjlUUXhnblNhc2QwIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.5qqx8mOajsviq-0bwccNU2Y8l4TTDV9TeOmFHso5riI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/failure/organic/restaurant/fetchAll",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"failure",
+								"organic",
+								"restaurant",
+								"fetchAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "RESTAURANT_ID",
+			"value": "1"
+		}
+	]
+}

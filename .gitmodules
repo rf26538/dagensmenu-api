@@ -1,0 +1,5 @@
+[submodule "app/Shared/EatCommon"]
+	path = app/Shared/EatCommon
+	url = https://bitbucket.org/ashsal/eat-common.git
+[submodule "bar1"]
+	branch = master

@@ -1,0 +1,1 @@
+0 0 */25 * *  ec2-user  /opt/letsencrypt/letsencrypt-auto --no-bootstrap renew

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/opt/letsencrypt/letsencrypt-auto --no-bootstrap renew && sudo service httpd restart
